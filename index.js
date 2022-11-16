@@ -104,10 +104,11 @@ gsap.fromTo(footTwo, {
 const zahhakTL = gsap.timeline({
   scrollTrigger: {
     trigger: two,
-    start: "10% 20%",
+    start: "10% 40%",
     end: "bottom 90%",
     scrub: 3,
     pin: zahhakOne,
+    markers: true
   }
 });
 
@@ -115,7 +116,7 @@ zahhakTL
   .to(two, { opacity: 0.7, duration: 2 })
   .to(zahhakOne, { opacity: 0.7, duration: 2 })
   .to(zahhakOne, { scale: 1, duration: 10 })
-  .to(zahhakOne, { y: -300, duration: 2 })
+  // .to(zahhakOne, { y: -300, duration: 2 })
   .to(zahhakOne, { opacity: 0.6, duration: 2 })
   .to(zahhakOne, { opacity: 0.3, duration: 2 })
   .to(zahhakOne, { opacity: 0, duration: 2 })

@@ -65,6 +65,7 @@ body {
     height: 300vh;
     background-color: black;
     z-index: 1;
+    overflow: hidden;
 
     img {
       transform: rotate(90deg);
@@ -86,7 +87,7 @@ body {
   #two {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 200vh;
     opacity: 0;
     overflow: hidden;
@@ -94,7 +95,7 @@ body {
     img {
       width: 50vh;
       height: 80vh;
-      transform: scale(3);
+      transform: scale(2);
     }
   }
 
